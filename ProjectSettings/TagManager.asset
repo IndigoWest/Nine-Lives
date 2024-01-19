@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - slowness
   - jumpPowerup
+  - Window
   layers:
   - Default
   - TransparentFX
