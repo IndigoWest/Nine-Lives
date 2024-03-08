@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private float verticalInput;
     private float horizontalInput;
-    private float jumpForce = 10;
+    private float jumpForce = 8;
     private bool isJumping = false;
 
     public bool hasSpeedPowerup;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public int slownessDuration = 30;
 
     public bool hasJumpPowerup;
-    private float powerupJump = 15;
+    private float powerupJump = 11;
     public int jumpDuration = 30;
 
     public bool gameOver;
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            jumpForce = 10;
+            jumpForce = 8;
         }
     }
 
