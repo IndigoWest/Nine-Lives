@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float jumpForce = 8;
     private bool isJumping = false;
+    private int lifeCount = 9;
 
     public bool hasSpeedPowerup;
     private float powerupSpeed = 10;
@@ -25,6 +26,9 @@ public class PlayerController : MonoBehaviour
     public bool hasJumpPowerup;
     private float powerupJump = 11;
     public int jumpDuration = 30;
+
+    public bool hasHealthPowerup;
+    private float healthPower = 1;
 
     public bool gameOver;
 
@@ -68,6 +72,11 @@ public class PlayerController : MonoBehaviour
         else
         {
             jumpForce = 8;
+        }
+
+        if (hasHealthPowerup)
+        {
+            
         }
     }
 
@@ -134,4 +143,9 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
         }
     }
+
+    //public void Win()
+   // {
+    //    if (CompareTag("Milk") )
+   // }
 }
