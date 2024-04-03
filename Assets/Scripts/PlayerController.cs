@@ -143,9 +143,4 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
         }
     }
-
-    //public void Win()
-   // {
-    //    if (CompareTag("Milk") )
-   // }
 }

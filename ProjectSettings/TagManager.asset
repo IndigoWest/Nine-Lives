@@ -11,6 +11,8 @@ TagManager:
   - slowness
   - jumpPowerup
   - Window
+  - Milk
+  - healthPowerup
   layers:
   - Default
   - TransparentFX

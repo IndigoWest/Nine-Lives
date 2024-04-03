@@ -43,6 +43,16 @@ public class LivesManagement : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("healthPowerup"))
+        {
+            Destroy(other.gameObject);
+            health++;
+            UpdateLives();
+        }
+    }
+
     private void EndGame()
     {
         if (health < 1)
