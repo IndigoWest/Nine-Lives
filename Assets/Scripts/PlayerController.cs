@@ -25,8 +25,6 @@ public class PlayerController : MonoBehaviour
 
     // Declares a private bool called isJumping and sets it to false
     private bool isJumping = false;
-    // Declares a private int called lifeCount and sets it to 9
-    private int lifeCount = 9;
 
     // Declares a public vool called hasSpeedPowerup
     public bool hasSpeedPowerup;
