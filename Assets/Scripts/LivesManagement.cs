@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEditor;
 // Uses UnityEngine namespace for project
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Creates a public class called LivesManagement that inherits from MonoBehaviour
 public class LivesManagement : MonoBehaviour
@@ -26,7 +27,7 @@ public class LivesManagement : MonoBehaviour
     private void Update()
     {
         // Calls the EndGame method
-        EndGame();
+        LoseGame();
     }
 
     // Create a private method called OnCollisionEnter that passes through a Collision called collision
@@ -78,17 +79,25 @@ public class LivesManagement : MonoBehaviour
     }
 
     // Creates a private method called EndGame
-    private void EndGame()
-    {
+    //private void EndGame()
+   // {
         // Creates an if statement which checks if health is less than 1
+       // if (health < 1)
+      //  {
+            // If health is less than one, it will exit playmode else it will call Application.Quit method
+//#if UNITY_EDITOR
+  //          EditorApplication.ExitPlaymode();
+//#else
+  //          Application.Quit();
+//#endif
+      //  }
+  //  }
+
+    private void LoseGame()
+    {
         if (health < 1)
         {
-            // If health is less than one, it will exit playmode else it will call Application.Quit method
-#if UNITY_EDITOR
-            EditorApplication.ExitPlaymode();
-#else
-            Application.Quit();
-#endif
+            SceneManager.LoadScene("Lose Screen");
         }
     }
 }
