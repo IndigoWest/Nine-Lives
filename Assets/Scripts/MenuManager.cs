@@ -11,7 +11,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     // Declares a public Slider called musicSlider and masterSlider
-    public Slider musicSlider, masterSlider;
+    public Slider musicSlider, masterSlider, brightnessSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,9 @@ public class MenuManager : MonoBehaviour
         // Creates an if statement where if the musicSlider does not equal null, the value of the musicSlider is set to the GetMusicVolume method from the PreferencesManager
         if (musicSlider != null)
             musicSlider.value = PreferencesManager.GetMusicVolume();
+
+        if (brightnessSlider != null)
+            brightnessSlider.value = PreferencesManager.GetBrightness();
     }
 
     // Creates a public method called ChangeSoundVolume that passes through the float value soundLevel
@@ -37,5 +40,10 @@ public class MenuManager : MonoBehaviour
     {
         // When the method is called, it accesses the AudioManager script to change the music's volume
         AudioManager.Instance.ChangeMusicVolume(soundLevel);
+    }
+
+    public void ChangeBrightness(float level)
+    {
+        PreferencesManager.SetBrightness(level);
     }
 }

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BrightnessManager : MonoBehaviour
 {
-    private static BrightnessManager instance;
+    public Light sun;
 
-    public static BrightnessManager Instance { get { return instance; } }
-
-    
+    private void Start()
+    {
+        sun.intensity = PreferencesManager.GetBrightness();
+    }
 }

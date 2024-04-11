@@ -20,6 +20,11 @@ public static class PreferencesManager
         return PlayerPrefs.GetFloat("MasterVolume", 1);
     }
 
+    public static float GetBrightness()
+    {
+        return PlayerPrefs.GetFloat("Brightness", 1);
+    }
+
     // Created a public static void method called SetMusicVolume that passed through the float soundLevel
     public static void SetMusicVolume(float soundLevel)
     {
@@ -32,5 +37,10 @@ public static class PreferencesManager
     {
         // Sets the master's volume by setting the float value using the arguments MasterVolume and soundLevel that was accessed from PlayerPrefs
         PlayerPrefs.SetFloat("MasterVolume", soundLevel);
+    }
+
+    public static void SetBrightness(float soundLevel)
+    {
+        PlayerPrefs.SetFloat("Brightness", soundLevel);
     }
 }
