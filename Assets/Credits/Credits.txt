@@ -1,5 +1,29 @@
 Background Music
 23:55 on the Disco Doomsday Clock by ScOmBer (c) copyright 2021 Licensed under a Creative Commons Attribution Noncommercial  (3.0) license. https://dig.ccmixter.org/files/scomber/63159 Ft: Dysfunction_AL & the 80's
 
+Images
+	1. Orange pattern abstract wallpaper by PixaHive. https://pixahive.com/photo/orange-pattern-abstract-wallpaper/.
+	2. Orange Cream Wallpaper by kaciasea. https://www.deviantart.com/kaciasea/art/Orange-Cream-Wallpaper-251908623.
+	3. Pet dog animal by WildOne. https://creazilla.com/nodes/1651497-pet-dog-animal-illustration.
+	4. 
+
 Assets
-	1. Plank Textures PBR by A dog's life software (c) copyright . link
+	1. Animals FREE by ithappy. https://assetstore.unity.com/packages/3d/characters/animals/animals-free-260727#publisher.
+	2. Wood Pattern Material by FrOzBi. https://assetstore.unity.com/packages/2d/textures-materials/wood/wood-pattern-material-170794.
+	3. Meat Hammer PBR by 3D.BJ. https://assetstore.unity.com/packages/3d/props/interior/meat-hammer-pbr-129061.
+	4. Free Cans Pack by That Individual. https://assetstore.unity.com/packages/3d/props/free-cans-pack-122374.
+	5. CoffeeShop Starter Pack by Puzzled Wizard. https://assetstore.unity.com/packages/3d/props/coffeeshop-starter-pack-160914.
+	6. PBR Cardboard Box by Crow Art. https://assetstore.unity.com/packages/3d/props/pbr-cardboard-box-110635.
+	7. Cutlery Silverware PBR by devotid. https://assetstore.unity.com/packages/3d/props/food/cutlery-silverware-pbr-106932.
+	8. Distant Lands Free Characters by Distant Lands. https://assetstore.unity.com/packages/3d/characters/distant-lands-free-characters-178123.
+	9. Food Pack | Free Demo by Mumifier Studio. https://assetstore.unity.com/packages/3d/props/food/food-pack-free-demo-225294.
+	10. Food & Grocery Items - Low Poly by OneCoinGames. https://assetstore.unity.com/packages/3d/props/food/food-grocery-items-low-poly-75494.
+	11. 3D Props - Adorable Foods by Layer Lab. https://assetstore.unity.com/packages/3d/props/food/3d-props-adorable-foods-31249.
+	12. Food and Kitchen Props Pack by reach the enD. https://assetstore.unity.com/packages/3d/props/food-and-kitchen-props-pack-85050.
+	13. Kitchen Props Free by Jake Sullivan. https://assetstore.unity.com/packages/3d/props/interior/kitchen-props-free-80208.
+	14. Free chibi cat by Ladymito. https://assetstore.unity.com/packages/3d/characters/animals/mammals/free-chibi-cat-165490.
+	15. Mess Maker FREE by The Quantum Nexus. https://assetstore.unity.com/packages/tools/modeling/mess-maker-free-213803.
+	16. Simple Foods by Bubba. https://assetstore.unity.com/packages/3d/props/food/simple-foods-207032.
+	17. Skybox Series Free by Avionx. https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633.
+	18. Survival Game Tools by cookiepopworks.com. https://assetstore.unity.com/packages/3d/props/tools/survival-game-tools-139872.
+	19. LightBulb by thu0x33. https://assetstore.unity.com/packages/3d/props/interior/lightbulb-218258.
