@@ -20,6 +20,7 @@ public static class PreferencesManager
         return PlayerPrefs.GetFloat("MasterVolume", 1);
     }
 
+    // Creates a public static float method called GetBrightness that returns a GetFloat method that passes through the arguments Brightness and 1 that was accessed from PlayerPrefs
     public static float GetBrightness()
     {
         return PlayerPrefs.GetFloat("Brightness", 1);
@@ -39,8 +40,10 @@ public static class PreferencesManager
         PlayerPrefs.SetFloat("MasterVolume", soundLevel);
     }
 
+    // Creates a public static method called SetBrightness that passes through the float soundLevel
     public static void SetBrightness(float soundLevel)
     {
+        // Sets the brightness by setting the float value using the arguments Brightness and soundLevel that was accessed from PlayerPrefs
         PlayerPrefs.SetFloat("Brightness", soundLevel);
     }
 }

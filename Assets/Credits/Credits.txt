@@ -1,11 +1,11 @@
 Background Music
 23:55 on the Disco Doomsday Clock by ScOmBer (c) copyright 2021 Licensed under a Creative Commons Attribution Noncommercial  (3.0) license. https://dig.ccmixter.org/files/scomber/63159 Ft: Dysfunction_AL & the 80's
 
-Images
+Background Images
 	1. Orange pattern abstract wallpaper by PixaHive. https://pixahive.com/photo/orange-pattern-abstract-wallpaper/.
 	2. Orange Cream Wallpaper by kaciasea. https://www.deviantart.com/kaciasea/art/Orange-Cream-Wallpaper-251908623.
 	3. Pet dog animal by WildOne. https://creazilla.com/nodes/1651497-pet-dog-animal-illustration.
-	4. 
+	4. Wallpaper Orange, Background, Flame for Mobile and Desktop by Muchos_grazias. https://images.app.goo.gl/9thoBTsERbdQrpbj8.
 
 Assets
 	1. Animals FREE by ithappy. https://assetstore.unity.com/packages/3d/characters/animals/animals-free-260727#publisher.
@@ -27,3 +27,4 @@ Assets
 	17. Skybox Series Free by Avionx. https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633.
 	18. Survival Game Tools by cookiepopworks.com. https://assetstore.unity.com/packages/3d/props/tools/survival-game-tools-139872.
 	19. LightBulb by thu0x33. https://assetstore.unity.com/packages/3d/props/interior/lightbulb-218258.
+	20. Kitchen Furniture and Appliances by Madison Sadler.

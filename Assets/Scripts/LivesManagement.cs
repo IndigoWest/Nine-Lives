@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEditor;
 // Uses UnityEngine namespace for project
 using UnityEngine;
+// Uses UnityEngine.SceneManagement namespace for project
 using UnityEngine.SceneManagement;
 
 // Creates a public class called LivesManagement that inherits from MonoBehaviour
@@ -93,8 +94,10 @@ public class LivesManagement : MonoBehaviour
       //  }
   //  }
 
+    // Creates a private method called LoseGame
     private void LoseGame()
     {
+        // Creates an if statement where if health is less than one, it will load the scene Lose Screen
         if (health < 1)
         {
             SceneManager.LoadScene("Lose Screen");

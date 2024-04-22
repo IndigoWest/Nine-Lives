@@ -42,8 +42,10 @@ public class MenuManager : MonoBehaviour
         AudioManager.Instance.ChangeMusicVolume(soundLevel);
     }
 
+    // Creates a public method called ChangeBrightness that passes through the float value level
     public void ChangeBrightness(float level)
     {
+        // Accesses the PreferencesManager to set the brightness to whatever the value of level is
         PreferencesManager.SetBrightness(level);
     }
 }
