@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 // Uses UnityEngine namespace for project
 using UnityEngine;
+// Uses UnityEngine.InputSystem namespace for project
+using UnityEngine.InputSystem;
 
 // Creates a public class called PlayerController that inherits from MonoBehaviour
 public class PlayerController : MonoBehaviour
@@ -25,6 +27,14 @@ public class PlayerController : MonoBehaviour
 
     // Declares a private bool called isJumping and sets it to false
     private bool isJumping = false;
+    // Declares a private float called jumpTime and sets it to 1
+    private float jumpTime = 1;
+    // Declares a private float called jumpTimer
+    private float jumpTimer;
+    // Declares a private bool called hasJumped and sets it to false
+    private bool hasJumped = false;
+    // Declares a private bool called canJump and sets it to true
+    private bool canJump = true;
 
     // Declares a public vool called hasSpeedPowerup
     public bool hasSpeedPowerup;
@@ -55,15 +65,16 @@ public class PlayerController : MonoBehaviour
     {
         // Sets playerRb to get the component of Rigidbody
         playerRb = GetComponent<Rigidbody>();
+        jumpTimer = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
         // Sets horizontalInput to the GetAxis method from Input that passes through the string variable Horizontal
-        horizontalInput = Input.GetAxis("Horizontal");
+        //horizontalInput = Input.GetAxis("Horizontal");
         // Sets verticalInput to the GetAxis method from Input that passes through the string variable Vertical
-        verticalInput = Input.GetAxis("Vertical");
+        //verticalInput = Input.GetAxis("Vertical");
 
         // Calls the Translate method to be used to move the player
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
@@ -71,7 +82,7 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up, Time.deltaTime * rotationSpeed * horizontalInput);
 
         // Creates an if statement where if the space key is held down and isJumping is false, the player will jump
-        if (Input.GetKeyDown(KeyCode.Space) && (isJumping == false))
+        if (hasJumped && (isJumping == false))
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
@@ -186,5 +197,16 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.red;
         // Draws a line from the player's position to a place in front of the player at a distance of 500
         Gizmos.DrawLine(transform.position, transform.forward * 500f);
+    }
+
+    public void Move(InputAction.CallbackContext context)
+    {
+        horizontalInput = context.ReadValue<Vector2>().x;
+        verticalInput = context.ReadValue<Vector2>().y;
+    }
+
+    public void Jump(InputAction.CallbackContext context)
+    {
+        hasJumped = context.ReadValueAsButton();
     }
 }
