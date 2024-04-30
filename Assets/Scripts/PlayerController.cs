@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 // Uses UnityEngine.InputSystem namespace for project
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
 // Creates a public class called PlayerController that inherits from MonoBehaviour
 public class PlayerController : MonoBehaviour
@@ -84,6 +85,7 @@ public class PlayerController : MonoBehaviour
         // Creates an if statement where if the space key is held down and isJumping is false, the player will jump
         if (hasJumped && (isJumping == false))
         {
+            hasJumped = false;
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
@@ -199,14 +201,24 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.forward * 500f);
     }
 
-    public void Move(InputAction.CallbackContext context)
+    public void MoveInput(Vector2 newMoveDir)
     {
-        horizontalInput = context.ReadValue<Vector2>().x;
-        verticalInput = context.ReadValue<Vector2>().y;
+        horizontalInput = newMoveDir.x;
+        verticalInput = newMoveDir.y;
     }
 
-    public void Jump(InputAction.CallbackContext context)
+    public void OnMove(InputValue value)
     {
-        hasJumped = context.ReadValueAsButton();
+        MoveInput(value.Get<Vector2>());
+    }
+
+    public void JumpInput(bool newJumpState)
+    {
+        hasJumped = newJumpState;
+    }
+
+    public void OnJump(InputValue value)
+    {
+        JumpInput(value.isPressed);
     }
 }
