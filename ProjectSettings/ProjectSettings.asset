@@ -767,7 +767,7 @@ PlayerSettings:
     tvOS: 1
   incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1
-  allowUnsafeCode: 0
+  allowUnsafeCode: 1
   useDeterministicCompilation: 1
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
@@ -778,13 +778,34 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: NineLives
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: GCTC
+  metroCertificateIssuer: GCTC
+  metroCertificateNotAfter: 00ba92bcd5c5db01
   metroApplicationDescription: Nine Lives
-  wsaImages: {}
+  wsaImages:
+    65636: Assets/Images/Store Logo 1.png
+    65661: Assets/Images/Store Logo 3.png
+    65686: Assets/Images/Store Logo 4.png
+    65736: Assets/Images/Store Logo 5.png
+    65936: Assets/Store Logo 2.png
+    131172: Assets/Images/Store Logo_6.png
+    131272: Assets/Images/Store Logo_7.png
+    2031640: Assets/Images/Store Logo 13.png
+    2031716: Assets/Images/Store Logo 6.png
+    2031741: 
+    2031766: 
+    2031816: Assets/Images/Store Logo 9.png
+    2032016: 
+    2097252: Assets/Images/Store Logo 11.png
+    2097352: Assets/Images/Store Logo 12.png
+    2162788: Assets/Images/Store Logo_1.png
+    2162888: Assets/Images/Store Logo_2.png
+    2228324: Assets/Images/Store Logo_3.png
+    2228424: Assets/Images/Store Logo_4.png
+    2293860: Assets/Images/Store Logo_5.png
+    2293960: Assets/Images/Store Logo_6.png
   metroTileShortName: Nine Lives
   metroTileShowName: 0
   metroMediumTileShowName: 0
